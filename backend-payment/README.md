@@ -5,6 +5,13 @@ It demostrate the folder structure for the e-commerce website which demostarte i
 
 The project consists of a top level `package.json` typical of a nodejs project. However the individual service code is in repective `modules.*` directories.
 
+## Design Choices
+
+1. MVC (Model-View-Controller)- The project follows the MVC architectural pattern to ensure a separation of concerns and maintainability.
+4. Middleware for Cross-Cutting Concerns- Middleware functions are employed for cross-cutting concerns such as authentication, error handling, and logging. These middleware functions are defined in the utils directory and can be applied globally or selectively to specific routes.
+5. Dependency Injection- The project may utilize dependency injection to inject dependencies (e.g., database connection, external service clients) into modules or services. This promotes modularity and testability by allowing components to be easily replaced or mocked during testing.
+8. Strategy Pattern for Payment Methods- In the Payment Module, the integration with multiple payment providers can be implemented using the strategy pattern. Different payment providers (Stripe, BrainTree, PayPal) can be encapsulated as strategies, allowing the system to dynamically switch between them based on configuration or user preferences.
+
 ### Root Structure
 The root project contains shared modules, utils and services, with individual directories for each API.
 
@@ -80,3 +87,9 @@ The root project contains shared modules, utils and services, with individual di
 
 6. User Module- The User Module (`UserModule`) is all about user account management. This includes user profiles, account settings, and user-specific data.
 
+## Want to add new payment method-
+
+It follows the Strategy Design Pattern, allowing the client code to select a specific payment strategy at runtime. This approach adheres to the open/closed principle by enabling the addition of new payment methods without modifying existing code.
+-To add support for a new payment method, create a new concrete strategy class that extends PaymentStrategy and implements the provider-specific logic.
+-Update the paymentService to handle the new payment method, following the existing pattern.
+-No modification is needed in existing code, demonstrating adherence to the open/closed principle.
