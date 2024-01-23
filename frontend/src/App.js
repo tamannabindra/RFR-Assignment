@@ -1,0 +1,1 @@
+// This App.js file conatin the root react component that sets up the overall structure of the application.

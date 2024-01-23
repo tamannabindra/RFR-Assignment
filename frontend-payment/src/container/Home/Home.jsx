@@ -1,0 +1,1 @@
+// This file Home.jsx is the main page displaying a list of products.

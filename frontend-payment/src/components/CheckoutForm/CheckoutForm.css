@@ -1,0 +1,80 @@
+.checkout-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #6d5dfc 0%, #c79bf2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.checkout-form h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.checkout-form p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #eae7ff;
+}
+
+.checkout-form label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.checkout-form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.checkout-form select:focus {
+  border-color: #007bff;
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(109, 93, 252, 0.4);
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #6d5dfc;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form button:hover {
+  background-color: #f0e7ff;
+  transform: translateY(-3px);
+}
+
+.checkout-form button:active {
+  background-color: #e6dcf9;
+  transform: translateY(-1px);
+}
+
+/* Add Google Font for Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");

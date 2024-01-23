@@ -1,0 +1,1 @@
+// Configuration file is used for storing constants and environment-specific variables.
